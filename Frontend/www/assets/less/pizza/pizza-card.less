@@ -1,10 +1,20 @@
 .pizza-card {
+  position: relative;
   img {
-    max-width: 250px;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
   }
 
   h3 {
     color: @mainColor;
     background-color: lighten(@mainColor, 45%);
+  }
+
+  .new-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 20px;
   }
 }

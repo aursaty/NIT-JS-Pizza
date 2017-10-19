@@ -1,3 +1,304 @@
-@mainColor: blue;
+@mainColor: green;
+@RightPanelTopHeight: 85px;
+@RightPanelBottomHeight: 128px;
+@RightPanelWidth: 330px;
+@TopPanelHeight: 85px;
+@Orange: #ec890e;
 
 @import "pizza/pizza-card";
+@import "pizza/one-mini-card";
+
+.body {
+}
+
+.top-panel {
+  box-sizing: border-box;
+  padding-left: 130px;
+  padding-right: @RightPanelWidth + 20px;
+  width: 100%;
+  height: @TopPanelHeight;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,.8);
+}
+
+.top-panel .site-icon {
+  position: fixed;
+  top: 0px;
+  left: 9px;
+  background: @Orange;
+  width: 100px;
+  height: 90px;
+  font-size: 19px;
+  padding: 10px;
+  padding-top: 15px;
+  color: #fff
+}
+
+.top-panel .pizza-logo {
+  color: white;
+  text-align: center;
+}
+
+.top-panel .title-2 {
+  font-size: 25px;
+}
+
+.top-panel .loco-corner-icon{
+  transform: scaleY(-1);
+  margin-left: -10px;
+  width: 100px;
+  height: 11px;
+  position: absolute;
+  top: 90px;
+  background-size: 100px 11px;
+  background-image: url(../images/discount.svg);
+}
+
+.top-panel .header-top-row {
+  line-height: 11px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #a1a1a1;
+  color: #a1a1a1;
+  width: 100%;
+}
+
+.top-panel .header-top-row .header-top-row-item {
+  display: inline-block;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  //font-size: 20px;
+
+}
+
+.number {
+  font-size: 20px;
+}
+
+.workdays{
+  font-size: 12px;
+}
+
+.sing-in-button {
+  margin-top: -11px;
+  float: right;
+}
+
+.delivery {
+  font-size: 16px;
+}
+
+.main-container {
+  //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: @TopPanelHeight - 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row-main {
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 100%;
+  background: #fffff5;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.left-panel {
+  box-sizing: border-box;
+  max-width: 1354px;//1000px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px + @RightPanelWidth;
+}
+
+.row {
+  box-sizing: border-box;
+}
+
+.pizza-cont {
+  padding: 30px 15px 0px 15px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.pizza-types {
+  text-align: center;
+}
+
+.pizza-types-one {
+  color: @Orange;
+  display: inline-block;
+}
+
+.right-panel {
+  //-webkit-box-orient: vertical;
+  //display: -webkit-box;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: @RightPanelWidth;
+  background: #fff;
+  box-shadow: rgba(0,0,0,.2) -3px 3px 10px;
+
+}
+
+.right-top-panel {
+  display: block;
+  line-height: 17px;
+  padding-top: 35px;
+  position: fixed;
+  width: @RightPanelWidth;
+  height: @RightPanelTopHeight;
+  top: 0px;
+  right: 0px;
+}
+
+.r1 {
+  padding-bottom: 13px;
+
+}
+
+.orders-count-span {
+  padding: 3px 7px 3px 7px;
+}
+
+.clear-order-wrap {
+  float: right;
+  margin-top: 5px;
+  font-size: 10px;
+  padding-right: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 11px;
+  color: rgba(0,0,0,.5);
+}
+
+.order-list-title {
+  font-weight: 700;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.right-main-panel {
+  display: block;
+  //padding: 20px;
+  //height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: @RightPanelTopHeight;
+  margin-bottom: @RightPanelBottomHeight;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: @RightPanelWidth;
+  background: #F5F5F5;
+}
+
+.right-bottom-panel {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  //visibility: hidden;
+  padding: 10px;
+  position: fixed;
+  width: @RightPanelWidth;
+  height: @RightPanelBottomHeight;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+}
+
+.sum-label {
+  display: inline;
+  float: left;
+  font-weight: 700;
+  font-size: 15px;
+  //margin-bottom: 15px;
+}
+
+.sum-number {
+  padding-right: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  float: right;
+}
+
+.do-order-button {
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn-do-order {
+  padding: 10px 16px 10px 16px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px @RightPanelWidth 40px 0px;
+  border-top: 1px solid #e5e5e5;
+  color: gray;
+  background: #fff;
+}
+
+.discount-panel {
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  left: 9px;
+  background: @Orange;
+  width: 100px;
+  //height: 90px;
+  padding: 10px;
+}
+
+.discount-before {
+  left: 0px;
+  position: absolute;
+  top: -11px;
+  width: 100px;
+  height: 11px;
+  background-image: url("../images/discount.svg");
+}
+
+.discount-title {
+  font-family: Helvetica, Calibri;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px dotted #d16301;
+  margin-bottom: 7px;
+  padding-bottom: 3px;
+}
+
+.discount-text {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.orange {
+  background-color: @Orange;
+}
+
+.btn-active {
+  color: white;
+}
+
+.btn-warning {
+  background: @Orange;
+}
