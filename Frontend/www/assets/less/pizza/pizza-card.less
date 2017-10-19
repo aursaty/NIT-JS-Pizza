@@ -1,14 +1,39 @@
 .pizza-card {
   position: relative;
-  img {
+  .pizza-image {
+    border-radius: 50%;
     margin: 0 auto;
     max-width: 300px;
     width: 100%;
   }
 
-  h3 {
-    color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
+  .pizza-label-new {
+    font-size: 24px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+  }
+
+  .pizza-label-popular {
+    font-size: 24px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+  }
+
+  .title {
+    font-size: 30px;
+    color: @Orange;
+    font-weight: 700;
+    font-family: "Helvetica Neue";
+  }
+
+  .type {
+    color: #a3a0a0;
+  }
+
+  .description {
+    height: 65px;
   }
 
   .new-badge {
@@ -16,5 +41,15 @@
     top: -5px;
     right: -5px;
     font-size: 20px;
+  }
+
+  .pizza-small {
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+  }
+
+  .pizza-big {
+    padding: 0px 15px 0px 15px;
+    text-align: center;
   }
 }

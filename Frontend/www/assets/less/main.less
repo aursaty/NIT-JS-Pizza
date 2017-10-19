@@ -14,8 +14,8 @@
 .top-panel {
   box-sizing: border-box;
   padding-left: 130px;
-  padding-right: @RightPanelWidth + 20px;
-  width: 100%;
+  padding-right: /*@RightPanelWidth + */20px;
+  //width: 100%;
   height: @TopPanelHeight;
   margin-bottom: 20px;
   border-bottom: 1px solid black;
@@ -23,6 +23,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  right: @RightPanelWidth;
   background: rgba(0,0,0,.8);
 }
 
