@@ -15,7 +15,7 @@
 
 </head>
 <body>
-<div id="cart"></div>
+<!--<div id="cart"></div>-->
 <div class="main-container conteiner-fluid">
     <div class="row-main">
         <div class="left-panel">
@@ -36,237 +36,30 @@
                 <!--<li -->
                 <!--</ul>-->
             </div>
-            <div class="row" class="pizza_list">
-                <div class="col-md-6 col-lg-4 pizza-cont">
-                    <div class="thumbnail pizza-card">
-                        <div class="pizza-label-new">
-                            <span class="label label-danger">Нова</span>
-                        </div>
-                        <img class="pizza-image" src="assets/images/pizza_7.jpg">
-                        <div class="caption">
-                            <span class="title">Імпреза</span>
-                            <div class="type">М'ясна піца</div>
-                            <div class="description">Балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна
-                                паста, петрушка
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 pizza-small">
-                                    <div>
-                                        <img class="" src="assets/images/size-icon.svg">
-                                        <span class="diagonal">30</span>
-                                    </div>
-                                    <div>
-                                        <img class="" src="assets/images/weight.svg">
-                                        <span class="weight">370</span>
-                                    </div>
-                                    <h2>
-                                        <div class="price">
-                                            99
-                                            <div style="font-size: 14px">грн.</div>
-                                        </div>
-                                    </h2>
-                                    <a href="#" class="btn btn-warning buy-button-small">Купити</a>
-                                </div>
-                                <div class="col-sm-6 pizza-big">
-                                    <div>
-                                        <img class="" src="assets/images/size-icon.svg">
-                                        <span class="diagonal">40</span>
-                                    </div>
-                                    <div>
-                                        <img class="" src="assets/images/weight.svg">
-                                        <span class="weight">660</span>
-                                    </div>
-                                    <h2>
-                                        <div class="price">
-                                            169
-                                            <div style="font-size: 14px">грн.</div>
-                                        </div>
-                                    </h2>
-                                    <a href="#" class="btn btn-warning buy-button-small">Купити</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 pizza-cont">
-                    <div class="thumbnail pizza-card">
-                        <img class="pizza-image" src="assets/images/pizza_2.jpg">
-                        <div class="pizza-label-popular">
-                            <span class="label label-success">Популярна</span>
-                        </div>
-                        <div class="caption">
-                            <span class="title">Імпреза</span>
-                            <div class="type">М'ясна піца</div>
-                            <div class="description">Балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна
-                                паста, петрушка
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 pizza-small">
-                                    <div>
-                                        <img class="" src="assets/images/size-icon.svg">
-                                        <span class="diagonal">30</span>
-                                    </div>
-                                    <div>
-                                        <img class="" src="assets/images/weight.svg">
-                                        <span class="weight">370</span>
-                                    </div>
-                                    <h2>
-                                        <div class="price">
-                                            99
-                                            <div style="font-size: 14px">грн.</div>
-                                        </div>
-                                    </h2>
-                                    <a href="#" class="btn btn-warning buy-button-small">Купити</a>
-                                </div>
-                                <div class="col-sm-6 pizza-big">
-                                    <div>
-                                        <img class="" src="assets/images/size-icon.svg">
-                                        <span class="diagonal">40</span>
-                                    </div>
-                                    <div>
-                                        <img class="" src="assets/images/weight.svg">
-                                        <span class="weight">660</span>
-                                    </div>
-                                    <h2>
-                                        <div class="price">
-                                            169
-                                            <div style="font-size: 14px">грн.</div>
-                                        </div>
-                                    </h2>
-                                    <a href="#" class="btn btn-warning buy-button-small">Купити</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 pizza-cont">
-                    <div class="thumbnail pizza-card">
-                        <img class="pizza-image" src="assets/images/pizza_1.jpg">
-                        <div class="caption">
-                            <span class="title">Імпреза</span>
-                            <div class="type">М'ясна піца</div>
-                            <div class="description">Балик, салямі, куриця, сир моцарелла, сир рокфорд, ананаси, томатна
-                                паста, петрушка
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 pizza-big">
-                                    <div>
-                                        <img class="" src="assets/images/size-icon.svg">
-                                        <span class="diagonal">40</span>
-                                    </div>
-                                    <div>
-                                        <img class="" src="assets/images/weight.svg">
-                                        <span class="weight">660</span>
-                                    </div>
-                                    <h2>
-                                        <div class="price">
-                                            169
-                                            <div style="font-size: 14px">грн.</div>
-                                        </div>
-                                    </h2>
-                                    <a href="#" class="btn btn-warning buy-button-small">Купити</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="pizza_list">
             </div>
-        </div>
-        <div class="right-panel">
-            <div class="right-top-panel" style="display: block">
-                <div class="order-list-title">
-                    <r1 style="float: left">Замовлення&nbsp</r1>
-                    <span class="badge orange orders-count-span" style="float: left">1</span>
-                    <span class="clear-order-wrap">Очистити замовлення</span>
-                </div>
-            </div>
-            <div class="right-main-panel" style="display: block">
-                <div class="one-mini-card">
-                    <img class="img-aside pizza-icon" src="assets/images/pizza_1.jpg">
-                    <p class="bold mb10 ng-score">
-                        <span class="order-title">Імпреза (Велика)</span>
-                    </p>
-                    <div class="order-options">
-                        <img class="diagonal-image" src="assets/images/size-icon.svg">
-                        <span class="diagonal">40</span>
-                        <img class="gram-image" src="assets/images/weight.svg">
-                        <span class="gram">845</span>
-                    </div>
-                    <div class="price-count-box">
-                        <span class="price">798 грн</span>
-                        <a class="minus btn btn-xs btn-danger btn-circle">
-                            <i class="glyphicon glyphicon-minus icon-white"></i>
-                        </a>
-                        <span class="label order-pizza-count">2</span>
-                        <a class="plus btn btn-xs btn-success btn-circle">
-                            <i class="glyphicon glyphicon-plus icon-white"></i>
-                        </a>
-                        <a class="count-clear btn btn-xs btn-default btn-circle">
-                            <i class="glyphicon glyphicon-remove icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="one-mini-card">
-                    <img class="img-aside pizza-icon" src="assets/images/pizza_1.jpg">
-                    <p class="bold mb10 ng-score">
-                        <span class="order-title">Імпреза (Велика)</span>
-                    </p>
-                    <div class="order-options">
-                        <img class="diagonal-image" src="assets/images/size-icon.svg">
-                        <span class="diagonal">40</span>
-                        <img class="gram-image" src="assets/images/weight.svg">
-                        <span class="gram">845</span>
-                    </div>
-                    <div class="price-count-box">
-                        <span class="price">798 грн</span>
-                        <a class="minus btn btn-xs btn-danger btn-circle">
-                            <i class="glyphicon glyphicon-minus icon-white"></i>
-                        </a>
-                        <span class="label order-pizza-count">2</span>
-                        <a class="plus btn btn-xs btn-success btn-circle">
-                            <i class="glyphicon glyphicon-plus icon-white"></i>
-                        </a>
-                        <a class="count-clear btn btn-xs btn-default btn-circle">
-                            <i class="glyphicon glyphicon-remove icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="one-mini-card">
-                    <img class="img-aside pizza-icon" src="assets/images/pizza_1.jpg">
-                    <p class="bold mb10 ng-score">
-                        <span class="order-title">Імпреза (Велика)</span>
-                    </p>
-                    <div class="order-options">
-                        <img class="diagonal-image" src="assets/images/size-icon.svg">
-                        <span class="diagonal">40</span>
-                        <img class="gram-image" src="assets/images/weight.svg">
-                        <span class="gram">845</span>
-                    </div>
-                    <div class="price-count-box">
-                        <span class="price">798 грн</span>
-                        <a class="minus btn btn-xs btn-danger btn-circle">
-                            <i class="glyphicon glyphicon-minus icon-white"></i>
-                        </a>
-                        <span class="label order-pizza-count">2</span>
-                        <a class="plus btn btn-xs btn-success btn-circle">
-                            <i class="glyphicon glyphicon-plus icon-white"></i>
-                        </a>
-                        <a class="count-clear btn btn-xs btn-default btn-circle">
-                            <i class="glyphicon glyphicon-remove icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="right-bottom-panel" style="display: block">
-                <span class="sum-label">Сума замовлення</span>
-                <span class="sum-number">199 грн</span>
-                <div class="do-order-button">
-                    <button class="btn btn-warning btn-do-order">Замовити</button>
-                </div>
-            </div>
-
         </div>
     </div>
+    <div class="right-panel">
+        <div class="right-top-panel" style="display: block">
+            <div class="order-list-title">
+                <r1 style="float: left">Замовлення&nbsp</r1>
+                <span class="badge orange orders-count-span" style="float: left">1</span>
+                <span class="clear-order-wrap">Очистити замовлення</span>
+            </div>
+        </div>
+        <div class="right-main-panel" id="cart" style="display: block"></div>
+        <div class="right-bottom-panel" style="display: block">
+            <span class="sum-label">Сума замовлення</span>
+            <span class="sum-number">0 грн.</span>
+            <!--<span class="sum-label">грн.</span>-->
+            <div class="do-order-button">
+                <button class="btn btn-warning btn-do-order">Замовити</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 </div>
 <div class="navbar top-panel">
     <div class="site-icon">
@@ -308,10 +101,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!--Own JavaScript -->
-<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
-
 
 
 
