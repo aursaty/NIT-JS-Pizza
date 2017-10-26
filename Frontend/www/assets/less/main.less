@@ -102,6 +102,8 @@
 }
 
 .row-main {
+  margin-top: -20px;
+  padding-top: 20px;
   margin-right: -15px;
   margin-left: -15px;
   height: 100%;
@@ -131,12 +133,9 @@
 }
 
 .pizza-types {
+  padding: 0px;
   text-align: center;
-}
-
-.pizza-types-one {
-  color: @Orange;
-  display: inline-block;
+  margin: 0px;
 }
 
 .right-panel {
@@ -235,8 +234,6 @@
   float: right;
 }
 
-
-
 .do-order-button {
   margin: 0 auto;
   display: inline-block;
@@ -299,7 +296,25 @@
 }
 
 .btn-active {
+  padding: 10px 15px;
   color: white;
+  background: @Orange;
+  display: inline-block;
+}
+
+.btn-not-active {
+  padding: 10px 15px;
+  color: @Orange;
+  background: transparent;
+}
+
+.btn-active:hover {
+  color: white;
+}
+
+.btn-not-active:hover {
+  background: rgb(221, 221, 221);
+  color: @Orange;
 }
 
 .btn-warning {

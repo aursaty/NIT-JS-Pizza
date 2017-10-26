@@ -11,6 +11,7 @@ var PizzaSize = {
 
 //Змінна в якій зберігаються перелік піц в кошику
 var Cart = [];
+var Cart1 = [];
 
 //HTML едемент куди будуть додаватися піци
 var $cart = $("#cart");
@@ -54,10 +55,13 @@ function removeFromCart(cart_item) {
 }
 
 function initialiseCart() {
+    if (Cart.length === 0)
+        $(".btn-do-order").attr("class", "btn btn-warning btn-do-order disabled");
     //Фукнція віпрацьвуватиме при завантаженні сторінки
     //Тут можна наприклад, зчитати вміст корзини який збережено в Local Storage то показати його
     //TODO: ...
 
+    Cart = ((JSON.parse(localStorage.getItem('cart'))));
     updateCart();
 }
 
@@ -70,6 +74,10 @@ function updateCart() {
     //Функція викликається при зміні вмісту кошика
     //Тут можна наприклад показати оновлений кошик на екрані та зберегти вміт кошика в Local Storage
     var order_sum = 0;
+    if (Cart.length === 0)
+        $(".btn-do-order").attr("class", "btn btn-warning btn-do-order disabled");
+    else
+        $(".btn-do-order").attr("class", "btn btn-warning btn-do-order active");
 
     //Очищаємо старі піци в кошику
     $cart.html("");
@@ -109,7 +117,14 @@ function updateCart() {
     Cart.forEach(showOnePizzaInCart);
     $(".sum-number").text(order_sum + " грн.");
 
+
+    localStorage.setItem('cart', JSON.stringify(Cart));
 }
+
+$('.clear-order-wrap').click(function () {
+    Cart = [];
+    updateCart();
+})
 
 exports.removeFromCart = removeFromCart;
 exports.addToCart = addToCart;
