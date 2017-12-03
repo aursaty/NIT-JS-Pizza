@@ -12,6 +12,8 @@ var PizzaSize = {
 //Змінна в якій зберігаються перелік піц в кошику
 var Cart = [];
 
+var API = require('../API');
+
 //HTML едемент куди будуть додаватися піци
 var $cart = $("#cart");
 
@@ -122,6 +124,21 @@ function updateCart() {
     localStorage.setItem('cart', JSON.stringify(Cart));
 }
 
+function createOrder(callback) {
+    API.createOrder({
+        name: "Client name",
+        phone: "88005553535",
+        order: Cart
+        },
+        function (err, result) {
+        if (err) {
+            return callback(err);
+        }
+        callback(null, result);
+        }
+    )
+}
+
 $('.clear-order-wrap').click(function () {
     Cart = [];
     updateCart();
@@ -134,3 +151,5 @@ exports.getPizzaInCart = getPizzaInCart;
 exports.initialiseCart = initialiseCart;
 
 exports.PizzaSize = PizzaSize;
+
+exports.createOrder = createOrder;
